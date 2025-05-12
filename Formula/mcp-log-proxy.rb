@@ -5,21 +5,21 @@
 class McpLogProxy < Formula
   desc "a web logging proxy for MCP client-server communication"
   homepage "https://github.com/emicklei/mcp-log-proxy"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.5/mcp-log-proxy_Darwin_x86_64.tar.gz"
-      sha256 "2a57e845c3fbebb905fe2919f3a466976244becd875061768bdc72bdafcef27f"
+      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.6/mcp-log-proxy_Darwin_x86_64.tar.gz"
+      sha256 "ab49c7117a21651cdbb15a4469b7145758201856f88960f20108c00c3022ae78"
 
       def install
         bin.install "mcp-log-proxy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.5/mcp-log-proxy_Darwin_arm64.tar.gz"
-      sha256 "bf1808a862202fa999a4c2773bf0abccd0f986ff7b2a438ccd20d80400bacbd2"
+      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.6/mcp-log-proxy_Darwin_arm64.tar.gz"
+      sha256 "48b36dd2070b3c15de98b9a62dec701bf4233dec7865b182259faff8f8dfcfae"
 
       def install
         bin.install "mcp-log-proxy"
@@ -29,15 +29,15 @@ class McpLogProxy < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.5/mcp-log-proxy_Linux_x86_64.tar.gz"
-      sha256 "504269a3b7208b285c9fc5b62c6ef2f6dfe71e63bdc90f6b4af2fda27ac1a8c7"
+      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.6/mcp-log-proxy_Linux_x86_64.tar.gz"
+      sha256 "77db82f67dc2e02b77c9b42a0045b31ece3d2daed9e31fbb23df2272c9616146"
       def install
         bin.install "mcp-log-proxy"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.5/mcp-log-proxy_Linux_arm64.tar.gz"
-      sha256 "e0e1802138200a4654532dee74824aca8c8965b5056fcd07e0b7883d5087d563"
+      url "https://github.com/emicklei/mcp-log-proxy/releases/download/v0.2.6/mcp-log-proxy_Linux_arm64.tar.gz"
+      sha256 "3b35f9b958dc31b4f264ba1f32a55cbb9954fb2ed048aa3ec32e4236f6b02394"
       def install
         bin.install "mcp-log-proxy"
       end
