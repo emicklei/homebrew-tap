@@ -2,7 +2,7 @@ class Melrose < Formula
   desc "Program music melodies and play them over MIDI"
   homepage "https://github.com/emicklei/melrose"
   url "https://github.com/emicklei/melrose.git", branch: "master"
-  version "v1.0.0-beta20"
+  version "v1.0.0"
   license "MIT"
 
   depends_on "go" => :build
@@ -11,7 +11,7 @@ class Melrose < Formula
     odie "Go 1.24.2 or newer is required" if Formula["go"].version < Version.new("1.24.2")
 
     ENV["GOBIN"] = bin
-    system "go", "install", "github.com/emicklei/melrose/cmd/melrose@v1.0.0-beta20"
+    system "go", "install", "github.com/emicklei/melrose/cmd/melrose@v1.0.0"
   end
 
   test do
