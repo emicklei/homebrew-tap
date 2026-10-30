@@ -2,7 +2,7 @@ class Keymidi < Formula
   desc "OS Keyboard MIDI utility"
   homepage "https://codeberg.org/emicklei/keymidi"
   url "https://codeberg.org/emicklei/keymidi.git", branch: "main"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   depends_on "go" => :build
@@ -11,7 +11,7 @@ class Keymidi < Formula
     odie "Go 1.24.2 or newer is required" if Formula["go"].version < Version.new("1.24.2")
 
     ENV["GOBIN"] = bin
-    system "go", "install", "codeberg.org/emicklei/keymidi/cmd/keymidi@v0.5.0"
+    system "go", "install", "codeberg.org/emicklei/keymidi/cmd/keymidi@v0.5.1"
   end
 
   test do
