@@ -2,7 +2,7 @@ class Melrose < Formula
   desc "Program music melodies and play them over MIDI"
   homepage "https://github.com/emicklei/melrose"
   url "https://github.com/emicklei/melrose.git", branch: "master"
-  version "v1.0.0"
+  version "1.0.0"
   license "MIT"
 
   depends_on "go" => :build

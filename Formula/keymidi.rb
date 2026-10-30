@@ -2,7 +2,7 @@ class Keymidi < Formula
   desc "OS Keyboard MIDI utility"
   homepage "https://codeberg.org/emicklei/keymidi"
   url "https://codeberg.org/emicklei/keymidi.git", branch: "main"
-  version "v0.5.0"
+  version "0.5.0"
   license "MIT"
 
   depends_on "go" => :build
